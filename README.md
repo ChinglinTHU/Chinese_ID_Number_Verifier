@@ -1,7 +1,17 @@
-# ID-number-check
-Check whether a 18-digit PRC Citizen ID number is correct
-* the function <code>verifyIDnumber()</code> is the main part
-* the last part is for getting the ID number with Brute Force
+# Chinese ID-number Verifier
+Verify a 18-digit PRC Citizen ID number is correct
 
-While if you want to get the real ID number, the best way is to ask directly!
+# Usage
+
+## Verify given id-numbers
+
+```bash
+python3 verify.py verify 110001191101011293
+```
+
+## Guess birthday
+```bash
+python3 verify.py guess 110001 1208 --birthday_prefix 2022
+```
+
 Get more information in [zhihu](https://zhuanlan.zhihu.com/p/53759238)
